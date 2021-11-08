@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity } from 'react-native';
 
-enum CardType {
+export enum CardType {
     ROW = 'ROW',
     GRID = 'GRID'
 }

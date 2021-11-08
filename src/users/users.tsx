@@ -72,6 +72,8 @@ export function Users() {
 
     const handleLoadMore = () => {
       // todo setInput with the parameters
+      console.log('xxx');
+      
     };
 
 

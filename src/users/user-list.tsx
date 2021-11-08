@@ -1,11 +1,10 @@
 import React from 'react';
 import {  StyleSheet, FlatList, View, Text } from 'react-native';
-import { UserListCard } from '../components/user-list-card';
+import { UserListCard, CardType } from '../components/user-list-card';
 import { UserType, UserListViewModeType } from '../../resources/types';
-import { productItemPerRowGrid } from '../../resources/user-card-size';
 
 
-function renderItem({item}: any, cardType: 'ROW' | 'GRID' ) {
+function renderItem({item}: any, cardType: CardType ) {
     return <UserListCard item={item} cardType={cardType} />;
 }
 
@@ -19,7 +18,7 @@ type UserListType = {
 
 export function UserList(props: UserListType){
     const {items, mode, userPerRow, handleLoadMore, status} = props;
-    const cardType = userPerRow === 1 && mode === 'v' ? 'ROW' : 'GRID';
+    const cardType = userPerRow === 1 && mode === 'v' ? CardType.ROW : CardType.GRID;
 
     return (
       <FlatList
