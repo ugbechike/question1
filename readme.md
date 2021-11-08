@@ -1,5 +1,11 @@
 # React Native
 
+# HOW TO RUN THE APP
+- Clone the repo [here] https://github.com/ugbechike/question1
+- Run yarn to install all the dependencies
+- Run `yarn pod:install` to install pods
+- Run `yarn ios` to run the application.
+
 This sample project loads a list of users from a JSON file located in at `resources/MOCK_DATA.json` and display them using a FlatList.
 
 The format of the data is as follows:
